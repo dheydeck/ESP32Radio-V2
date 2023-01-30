@@ -15,3 +15,4 @@ Updates:
 - 15-apr-2022: Redesigned station selection.
 - 25-apr-2022: Add support for WT32-ETH0 (wired Ethernet).
 - 04-may-2022: OLED with Wire library, should work with Heltec-WIfi board.
+- 30-Jan-2023: Added support for Lilygo TTGO TM Music Albums
