@@ -3,6 +3,7 @@
 //********************************************************************************************
 // 27-04-2017, ES: First set-up, derived from preferences example sketch.                    *
 // 11-02-2019, ES: names of I/O pins changed.                                                *
+// 30-01-2023, DG: Added pins for Lilygo TTGO TM Music Albums display                        *
 //********************************************************************************************
 
 #include <Preferences.h>
@@ -80,6 +81,10 @@ void setup()
   preferences.putString ( "pin_tft_dc",  "2                                      # GPIO Pin number for TFT DC" ) ;
   //
   preferences.putString ( "pin_sd_cs",   "21                                     # GPIO Pin number for SD card CS" ) ;
+  //
+  preferences.putString ( "pin_i2s_bck",  "26                                    # GPIO Pin number for TTGO TM Music Albums I2S BCK" ) ;
+  preferences.putString ( "pin_i2s_lck",  "25                                    # GPIO Pin number for TTGO TM Music Albums I2S L(R)CK" ) ;
+  preferences.putString ( "pin_i2s_din",  "19                                    # GPIO Pin number for TTGO TM Music Albums I2S DIN" ) ;
 
   preferences.end() ;
   delay ( 1000 ) ;
