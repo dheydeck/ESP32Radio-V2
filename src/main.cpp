@@ -94,6 +94,7 @@
 // 13-05-2022, ES: Correction I2S settings.
 // 15-05-2022, ES: Correction mp3 list for web interface.
 // 01-11-2022, ES: Support of AI Audio kit V2.1.
+// 30-01-2023, DH: Code for Lilygo TTGO TM Music Albums
 //
 // Define the version number, the format used is the HTTP standard.
 #define VERSION     "Thu, 03 Nov 2022 13:00:00 GMT"
@@ -452,7 +453,11 @@ progpin_struct   progpin[] =                             // Input pins and progr
   { 34, false, false,  "", false },                      // Note, no internal pull-up
   { 35, false, false,  "", false },                      // Note, no internal pull-up
   //{ 36, true,  false,  "", false },                    // Reserved for ADC battery level
-  { 39, false,  false,  "", false },                     // Note, no internal pull-up
+    #ifdef TTGOTM
+  { 37, false,  false,  "", false },                      // Lilygo TTGO TM Music Albums uses GPIO 37 for button 
+  { 38, false,  false,  "", false },                      // Lilygo TTGO TM Music Albums uses GPIO 38 for button 
+  #endif
+  { 39, false,  false,  "", false },                     // Note, no internal pull-up, used by Lilygo TTGO TM Music Albums for button
   { -1, false, false,  "", false }                       // End of list
 } ;
 
@@ -602,6 +607,9 @@ mqttpubc         mqttpub ;                                    // Instance for mq
 #endif
 #ifdef ST7789
  #include "ST7789.h"                                         // For ST7789 240x240 display
+#endif
+#ifdef TTGOTM
+ #include "ttgo-tm.h"                                         // For Lilygo TTGO TM Music Albums with ST7789 320x240 display
 #endif
 #ifdef ILI9341
  #include "ILI9341.h"                                        // For ILI9341 320x240 display
