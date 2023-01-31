@@ -1,0 +1,53 @@
+clk_dst = 1                                   # Offset during daylight saving time (hours)
+clk_offset = 1                                # Offset with respect to UTC in hours
+clk_server = pool.ntp.org                     # Time server to be used
+#
+gpio_37 = upvolume = 2                        # TTGO TM Music Albums button 2
+gpio_38 = uppreset = 1                        # TTGO TM Music Albums button 1
+gpio_39 = downvolume = 2                      # TTGO TM Music Albums button 3
+#
+ir_40BF = upvolume = 2
+ir_C03F = downvolume = 2
+#
+mqttbroker = none
+mqttpasswd = none
+mqttport = 1883
+mqttprefix = none
+mqttuser = none
+#
+pin_i2s_bck = 26                                   # GPIO Pin number for I2S BCK TTGO TM PCM5102A Decoder
+pin_i2s_din = 19                                   # GPIO Pin number for I2S DIN TTGO TM PCM5102A Decoder
+pin_i2s_lck = 25                                   # GPIO Pin number for I2S L(R)CK TTGO TM PCM5102A Decoder
+pin_ir = 35                                        # GPIO Pin number for IR receiver VS1838B
+pin_sd_cs = 13                                     # GPIO Pin number for SD card CS TTGO TM
+pin_tft_cs = 5                                     # GPIO Pin number for TFT CS TTGO TM ST7789
+pin_tft_dc = 16                                    # GPIO Pin number for TFT DC TTGO TM ST7789
+#
+preset = 16
+preset_000 = 109.206.96.34:8100                       #  0 - NAXI LOVE RADIO, Belgrade, Serbia
+preset_001 = airspectrum.cdnstream1.com:8114/1648_128 #  1 - Easy Hits Florida
+preset_002 = airspectrum.cdnstream1.com:8142/1303_128 #  2 - CLASSIC ROCK MIAMI
+preset_003 = airspectrum.cdnstream1.com:8000/1261_192 #  3 - Magic Oldies Florida
+preset_004 = airspectrum.cdnstream1.com:8008/1604_128 #  4 - Magic 60s Florida 60s Classic Rock
+preset_005 = us1.internet-radio.com:8105              #  5 - Classic Rock Florida - SHE Radio
+preset_006 = icecast.omroep.nl:80/radio1-bb-mp3       #  6 - Radio 1, NL
+preset_007 = icecast.omroep.nl:80/radio5-bb-mp3       #  7 - Radio 5, NL
+preset_008 = icecast.omroep.nl:80/radio2-bb-mp3       #  8 - Radio 2, NL
+preset_009 = streaming.hotmix-radio.net/hotmixradio-90-128.mp3 #  9 - Hotmix radio 90s
+preset_010 = streams.radiobob.de/bob-80srock/mp3-192/streams.radiobob.de  # 10 - Radio Bob
+preset_011 = wdr-edge-101d-dus-dtag-cdn.cast.addradio.de/wdr/diemaus/live/mp3/high # 11 - Maus
+preset_012 = stream.laut.fm/kinderlieder-123          # 12 - Kinderlieder
+preset_013 = bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk
+preset_014 = metafiles.gl-systemhaus.de/hr/hr1_2.m3u
+preset_015 = cbcmp3.ic.llnwd.net/stream/cbcmp3_M-7QMTL0_MTL # 15 - Ici Musique 100.7
+preset_016 = streamer.radio.co/sa7bf61271/listen      # JB's Rock N Roll
+#
+toneha = 0          # Not used if DEC_HELIX is defined
+tonehf = 0          # Not used if DEC_HELIX is defined
+tonela = 0          # Not used if DEC_HELIX is defined
+tonelf = 0          # Not used if DEC_HELIX is defined
+#
+volume = 45
+#
+wifi_00 = ADSL-11/pswrd
+wifi_01 = SSID/pswrd
